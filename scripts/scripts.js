@@ -1,5 +1,9 @@
 $(document).ready(function () {
-    if ((/#projects$/).test(document.location) === true) {
+    if ((/#portfolio$/).test(document.location) === true) {
+        $("main").load("art/portfolio.html")
+    } else if ((/#graphics$/).test(document.location) === true) {
+        $("main").load("art/index.html")
+    } else if ((/#projects$/).test(document.location) === true) {
         $("main").load("projects/index.html")
     } else if ((/#contact$/).test(document.location) === true) {
         $("main").load("contact.html")
