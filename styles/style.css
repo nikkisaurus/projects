@@ -7,6 +7,16 @@ body {
    justify-items: center;
 }
 
+a {
+   color: #088;
+   /* font-weight: bold; */
+   text-decoration: none;
+}
+
+a:hover {
+   color: #800;
+}
+
 header {
    background-color: #666;
    color: #FFF;
@@ -15,6 +25,7 @@ header {
    position: fixed;
    top: 0;
    left: 0;
+   z-index: 1;
 }
 
 header a {
@@ -39,26 +50,35 @@ nav li {
 
 h2 {
    margin: 0;
-   padding: 0;
+   padding: 0 0 1vw 0;
 }
 
 main {
    background-color: #fff;
    position: relative;
    width: 95vw;
-   margin: 3vw 0 1vw 0;
+   margin: 3vw 0 5vw 0;
    padding: 1vw;
+   z-index: 0;
    display: grid;
    border-radius: 1vw;
 }
 
+h3 {
+   margin: 0;
+   padding: 0;
+}
+
 footer {
    background-color: #666;
-   width: 95vw;
-   margin: 0;
-   padding: .8vw;
-   display: grid;
-   border-radius: .5vw;
+   color: #CCC;
+   font-size: .85vw;
+   width: 100vw;
+   padding: .5vw;
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   display:grid;
    align-items: center;
    justify-items: center;
 }
