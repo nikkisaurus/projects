@@ -4,6 +4,12 @@ body {
    font-family: Muli, sans-serif;
 }
 
+header {
+   background-color: #666;
+   color: #FFF;
+   padding: 10px;
+}
+
 h1 {
    font-family: Lobster, sans-serif;
    font-size: 3vw;
