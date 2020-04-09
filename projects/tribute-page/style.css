@@ -1,0 +1,52 @@
+body {
+   background-color: #ddd;
+   font-size: 1.2vw;
+   font-family: Muli, sans-serif;
+}
+
+h1 {
+   font-family: Lobster, sans-serif;
+   font-size: 3vw;
+   margin: 2% 0 0 0;
+}
+
+#main {
+   background-color: #fff;
+   width: 50%;
+   margin: 2% auto;
+   display: grid;
+   justify-items: center;
+   align-items: center;
+}
+
+#img-div {
+   background-color: #ddd;
+   width: 75%;
+   padding: 3% 3%;
+   display: grid;
+   justify-items: center;
+}
+
+#image {
+   max-width: 100%;
+   height: auto;
+}
+
+#img-caption {
+   margin-top: 2%;
+}
+
+#tribute-info {
+   text-align: justify;
+   width: 75%;
+}
+
+#quote {
+   margin-top: 10%;
+}
+
+footer {
+   padding: 3% 0 1% 0;
+   font-weight: bold;
+   font-size: 1.5vw;
+}
