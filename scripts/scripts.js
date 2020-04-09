@@ -1,20 +1,15 @@
-
 $(document).ready(function () {
-
-    function LoadContents(slug) {
-        let path = document.location.pathname.replace(/[^\\\/]*$/, '') + slug
-
-        // $("main").html("Fuck" + path)
-        $("main").load(path)
-        // alert(path)
-        // $(location).attr('href', path)
+    if ((/#projects$/).test(document.location) === true) {
+        $("main").load("projects/index.html")
+    } else {
+        $("main").load("main.html")
     }
 
-    // $("header a").on("click", function (e) {
-    //     LoadContents("index.html")
-    // })
+    $("header a").on("click", function () {
+        $("main").load("main.html")
+    })
 
-    $("a").on("click", function (e) {
-        LoadContents(e.target.id)
+    $("nav a").on("click", function (slug) {
+        $('main').load(slug.target.id)
     })
 });
