@@ -48,15 +48,29 @@ nav li:hover {
    background-color: rgb(0, 114, 114);
 }
 
-main {
+.container {
    background-color: #fff;
    border-radius: 1vw;
    position: relative;
    width: 95vw;
-   margin: 5vh 0;
    padding: 1vw;
+   margin: 5vh 0 1vh 0;
    z-index: 0;
    display: grid;
+}
+
+.container:not(main) {
+   margin: 1vh 0;
+}
+
+main {
+   display: grid;
+   /* align-items: center; */
+   justify-items: center;
+}
+
+h1 {
+   font-family: Handlee, sans-serif;
 }
 
 h2 {
@@ -70,8 +84,8 @@ h3 {
    padding: 0;
 }
 
-ul, li {
-   margin: 0 1vw;
+ul, li{
+   margin: 0 20px;
    padding: 0;
 }
 
@@ -98,8 +112,21 @@ footer {
    bottom: 0;
    left: 0;
    display:grid;
-   align-items: center;
-   justify-items: center;
+   align-items: right;
+   justify-items: right;
+}
+
+footer li {
+   display: inline-flex;
+   padding: .8vh 0;
+}
+
+footer a {
+   color: #FFF;
+}
+
+footer a:hover {
+   color: #CCC;
 }
 
 @media screen and (max-width: 300px) {
