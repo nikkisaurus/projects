@@ -1,6 +1,6 @@
 body {
    background-color:#CCC;
-   font-size: 1vw;
+   font-size: 1.5vh;
    font-family: Muli, sans-serif;
    display: grid;
    align-items: center;
@@ -41,7 +41,7 @@ nav ul {
 
 nav li {
    display: inline-flex;
-   padding: .75vw 1vw;
+   padding: .8vh 1vw;
 }
 
 nav li:hover {
@@ -53,7 +53,7 @@ main {
    border-radius: 1vw;
    position: relative;
    width: 95vw;
-   margin: 3vw 0 5vw 0;
+   margin: 5vh 0;
    padding: 1vw;
    z-index: 0;
    display: grid;
@@ -100,4 +100,10 @@ footer {
    display:grid;
    align-items: center;
    justify-items: center;
+}
+
+@media screen and (max-width: 300px) {
+  main {
+     width: 50%;
+  }
 }
