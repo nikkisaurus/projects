@@ -45,7 +45,7 @@ h1 {
 
 #main {
    background-color: #fff;
-   width: 50vw;
+   width: 75%;
    margin: 5vw auto;
    display: grid;
    align-items: center;
@@ -54,7 +54,7 @@ h1 {
 
 #img-div {
    background-color: #ddd;
-   width: 75vmin;
+   width:75%;
    padding: 2vw;
    display: grid;
    justify-items: center;
@@ -71,7 +71,7 @@ h1 {
 
 #tribute-info {
    text-align: justify;
-   width: 75vmin;
+   width: 75%;
 }
 
 #quote {
