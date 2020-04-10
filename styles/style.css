@@ -69,6 +69,10 @@ main {
    justify-items: center;
 }
 
+main p {
+   margins: 0 auto;
+}
+
 h1 {
    font-family: Handlee, sans-serif;
 }
