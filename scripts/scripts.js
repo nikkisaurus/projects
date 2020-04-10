@@ -8,13 +8,13 @@ $(document).ready(function () {
     } else if ((/#contact$/).test(document.location) === true) {
         $("main").load("contact.html")
     } else {
-        // $("main").load("main.html")
-        $("main").load("projects/index.html")
+        $("main").load("main.html")
+        // $("main").load("projects/index.html")
     }
 
     $("header a").on("click", function () {
-        // $("main").load("main.html")
-        $("main").load("projects/index.html")
+        $("main").load("main.html")
+        // $("main").load("projects/index.html")
     })
 
     $("nav a").on("click", function (slug) {
