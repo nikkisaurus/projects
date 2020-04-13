@@ -1,0 +1,26 @@
+body {
+    background-image: url("../images/Shadowlands.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: Raleway, sans-serif;
+    font-size: 2rem;
+    color: #fff;
+}
+
+h1 {
+    font-family: Viga, sans-serif;
+}
+
+#survey-form {
+    width: 50%;
+    margin: 0 auto;
+
+    background-color: rgba(0, 0, 0, 0.6);
+
+    padding: 3em;
+
+    label {
+        font-weight: normal;
+    }
+}
