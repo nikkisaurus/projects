@@ -19,8 +19,8 @@ h1 {
     background-color: rgba(0, 0, 0, 0.6);
 
     padding: 3em;
+}
 
-    label {
-        font-weight: normal;
-    }
+label {
+    font-weight: normal;
 }
