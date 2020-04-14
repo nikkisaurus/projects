@@ -16,57 +16,98 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    <!-- Embeds -->
    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
-   <script src="assets/scripts/scripts.js"></script>
-</head>
 
-<body>
-   <div class="container-fluid" id="main-container">
-      <!-- <nav>
-         <ul>
-            <li><a href="" id="main.html"><span class="fas fa-home"></span></a></li>
-            <li><a href="#about" id="main.html">About</a></li>
-            <li><a href="#projects" id="projects/index.html">Projects</a></li>
-            <li><a href="#contact" id="contact.html">Contact</a></li>
-         </ul>
-      </nav> -->
-      <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-light">
-         <div class="container">
-            <a class="navbar-brand" href="#">Tip Calculator</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar1">
-               <ul class="navbar-nav nav nav-fill w-100">
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#Intro">Info</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#Calc">Calculator</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-
-      <!-- <header></header>
-      <main class="container"></main>
-      <article id="projectsContainer" class="container"></article>
-      <footer>
-         <ul>
-            <li><a href="mailto:jlvellocido&#64;gmail.com">Email</a></li>
-            <li><a href="https://my.indeed.com/p/jasminev-f5w6syb" target="blank">Indeed</a></li>
-            <li><a href="https://www.facebook.com/priesterinniketa" target="blank">Facebook</a></li>
-         </ul>
-      </footer> -->
-   </div>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+   <script src="assets/scripts/scripts.js"></script>
+</head>
+
+<body>
+   <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+      <span></span>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu"
+         aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+         <div class="navbar-nav">
+            <a class="nav-item nav-link" href=""><span class="fas fa-home"></span></a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+         </div>
+      </div>
+   </nav>
+
+   <div class="container-fluid" id="main-container">
+      <main>
+         <article class="text-center" id="about">
+            <h1>My name is Jasmine.</h1>
+
+            <p>I'm an intermediate level full stack developer.</p>
+         </article>
+
+         <article id="projects">
+            <h2 class="text-center">Projects</h2>
+            <div class="row" id="card-container">
+               <div class="col-md-3">
+                  <div class="card text-center">
+                     <a href="projects/survey-form/index.html" target="_blank"><img class="card-img-top" src="assets/images/projects/survey-form.png" alt="Card image cap"></a>
+                     <div class="card-body">
+                        <h5 class="card-title">Born of Blood: Guild Application</h5>
+                        <p class="card-text">A FreeCodeCamp project to create a survey form using HTML and CSS.</p>
+                        <a href="projects/survey-form/index.html" class="card-link" target="_blank">Live</a>
+                        <a href="https://github.com/jlvellocido/projects/tree/master/projects/survey-form" class="card-link" target="_blank">Source</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-3">
+                  <div class="card text-center">
+                     <a href="projects/tribute-page/index.html" target="_blank"><img class="card-img-top"
+                           src="assets/images/projects/tribute-page.png" alt="Card image cap"></a>
+                     <div class="card-body">
+                        <h5 class="card-title">A Tribute to Oreo</h5>
+                        <p class="card-text">A FreeCodeCamp project to create a tribute page using HTML and CSS.</p>
+                        <a href="projects/tribute-page/index.html" class="card-link" target="_blank">Live</a>
+                        <a href="https://github.com/jlvellocido/projects/tree/master/projects/tribute-page" class="card-link"
+                           target="_blank">Source</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </article>
+
+         <article id="skills">
+            <h2 class="text-center">Skills</h2>
+            <div class="text-center">
+               <span class="fab fa-bootstrap"></span>
+               <span class="fab fa-css3"></span>
+               <span class="fab fa-html5"></span>
+               <span class="fab fa-js-square"></span>
+               <img src="assets/images/lua-icon.svg" width="35em" alt="Lua">
+               <span class="fab fa-php"></span>
+            </div>
+         </article>
+      </main>
+
+      <footer class="navbar fixed-bottom" id="contact">
+         <ul>
+            <li><a href="https://github.com/jlvellocido/projects" target="blank"><span class="fab fa-github-square"></span></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/jasmine-vellocido-2292041a7/" target="blank"><span
+                     class="fab fa-linkedin"></span></a></li>
+            <li><a href="mailto:jlvellocido&#64;gmail.com"><span class="fas fa-envelope"></span></a></li>
+         </ul>
+         <!-- <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Lua icon by Freepik@flaticon</a> -->
+      </footer>
+   </div>
 </body>
 
 </html>

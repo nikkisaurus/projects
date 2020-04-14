@@ -4,6 +4,7 @@ accent #E87D12 */
 
 @import url("https://fonts.googleapis.com/css?family=Handlee");
 @import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 
 body {
    background-image: url("../images/background.jpg");
@@ -11,5 +12,121 @@ body {
    background-attachment: fixed;
    background-size: cover;
 
+   font-family: Muli, sans-serif;
    font-size: 1vw;
+}
+
+h1 {
+   font-family: Handlee, sans-serif;
+   font-weight: bold;
+   color: #006B47;
+}
+
+h2 {
+   font-family: Roboto, sans-serif;
+   font-weight: bold;
+   color: #006B47;
+}
+
+a:active, a:link, a:visited {
+   color: #006B47;
+}
+
+a:hover {
+   color: #E87D12;
+}
+
+#main-container {
+   width: 95vw;
+   margin: 3em auto;
+   padding: 1em;
+
+   display: grid;
+
+   border-radius: 1em;
+}
+
+nav {
+   background-color: #007F55;
+
+   width: 100%;
+   margin: 0 !important;
+   padding: 0 !important;
+}
+
+#menu {
+   background-color: #006B47;
+}
+
+#menu a:active, #menu a:hover, #menu a:link, #menu a:visited {
+   color: #FFF !important;
+   text-decoration: none;
+}
+
+#menu a:hover {
+   background-color: #E87D12;
+}
+
+article {
+   width: 100%;
+   margin: 1em auto;
+   padding: 1em;
+
+   background-color: #FFF;
+   border-radius: .75em;
+}
+
+#projects {
+   background-color: #007F55;
+}
+
+#projects h2 {
+   color: #FFF;
+}
+
+#card-container {
+   margin: auto;
+}
+
+.card {
+   width: 20vw;
+   margin: 1em 0;
+   padding: .5em;
+}
+
+.card-title {
+   font-weight: bold;
+   color: #006B47;
+}
+
+.card-text {
+   font-style: italic;
+}
+
+#skills {
+   font-size: 2em;
+}
+
+footer {
+   margin: 0;
+   padding: 0;
+
+   display: flex;
+
+   background-color: #fff;
+}
+
+
+footer ul {
+   margin: 0 auto;
+   padding: 0;
+
+   font-size: 2em;
+}
+
+footer li {
+   margin: 0;
+   padding: 0;
+
+   display: inline-flex;
 }
