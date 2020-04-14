@@ -27,18 +27,16 @@ h1 {
     padding: 3em;
 }
 
-@media screen and (max-width: 300px) {
-    #description, #survey-form {
-        width: 75vw;
-    }
-}
-
 label {
     font-weight: normal;
 }
 
 input[type="radio"], input[type="checkbox"] {
     margin-right: 1em;
+}
+
+.smaller-text {
+    font-size: 1.5rem;
 }
 
 textarea {
