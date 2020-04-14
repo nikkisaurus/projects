@@ -5,7 +5,7 @@ body {
     background-size: cover;
 
     font-family: Raleway, sans-serif;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #fff;
 }
 
@@ -14,12 +14,12 @@ h1 {
 }
 
 #description {
-    width: 40%;
+    width: 40vw;
     margin: 0 auto;
 }
 
 #survey-form, #submitted {
-    width: 40%;
+    width: 40vw;
     margin: 1.5em auto;
 
     background-color: rgba(0, 0, 0, 0.6);
