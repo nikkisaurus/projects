@@ -35,10 +35,6 @@ input[type="radio"], input[type="checkbox"] {
     margin-right: 1em;
 }
 
-.smaller-text {
-    font-size: 1.5rem;
-}
-
 textarea {
     min-width: 100%;
     max-width: 100%;
