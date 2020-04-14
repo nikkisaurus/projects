@@ -14,12 +14,14 @@ h1 {
 }
 
 #description {
-    width: 50vw;
+    width: 40vw;
+    min-width: 300px;
     margin: 0 auto;
 }
 
 #survey-form, #submitted {
-    width: 50vw;
+    width: 40vw;
+    min-width: 300px;
     margin: 1.5em auto;
 
     background-color: rgba(0, 0, 0, 0.6);
