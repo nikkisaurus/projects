@@ -15,18 +15,22 @@ h1 {
 
 #description {
     width: 40vw;
-    min-width: 300px;
     margin: 0 auto;
 }
 
 #survey-form, #submitted {
     width: 40vw;
-    min-width: 300px;
     margin: 1.5em auto;
 
     background-color: rgba(0, 0, 0, 0.6);
 
     padding: 3em;
+}
+
+@media screen and (max-width: 300px) {
+    #description, #survey-form {
+        width: 75vw;
+    }
 }
 
 label {
