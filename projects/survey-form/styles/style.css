@@ -10,12 +10,17 @@ body {
 }
 
 h1 {
-    font-family: Viga, sans-serif;
+    font-weight: bold;
 }
 
-#survey-form {
-    width: 50%;
+#description {
+    width: 40%;
     margin: 0 auto;
+}
+
+#survey-form, #submitted {
+    width: 40%;
+    margin: 1.5em auto;
 
     background-color: rgba(0, 0, 0, 0.6);
 
@@ -24,4 +29,14 @@ h1 {
 
 label {
     font-weight: normal;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: .75em;
+}
+
+textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 10em;
 }

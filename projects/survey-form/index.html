@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Survey</title>
+    <title>Guild Application</title>
     <!-- Libraries -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -14,72 +14,82 @@
 
 <body>
     <div class="container-fluid">
-        <h1 id="title" class="text-primary text-center">Survey Form</h1>
-        <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+        <h1 class="text-primary text-center" id="title">Born of Blood</h1>
+        <p class="text-center" id="description">Thank you for your interest in joining Born of Blood! Please fill out the form below and an officer will contact you as soon as possible.</p>
 
-        <form id="survey-form">
-            <!-- <div class="form-group">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-            </div> -->
-
+        <form action="submitted.html" id="survey-form">
             <div class="form-group">
                 <label for="name" id="name-label"><span class="fas fa-user prefix"></span> Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
             </div>
 
             <div class="form-group">
-                <label for="email" id="email-label">Email</label>
-                <input type="text" id="email" placeholder="Enter your email"  required>
+                <label for="email" id="email-label"><span class="fas fa-envelope prefix"></span> Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email address" required>
             </div>
 
             <div class="form-group">
-                <label for="number" id="number-label">What level is your main?</label>
-                <input type="text" id="number" placeholder="Enter a number between 1 and 120">
+                <label for="battle-tag" id="battle-tag-label">Battle Tag (optional)</label>
+                <input type="text" class="form-control" id="battle-tag" placeholder="Enter your Battle Tag">
+            </div>
+
+            <div class="form-group">
+                <label for="discord" id="discord-label">Discord (optional)</label>
+                <input type="text" class="form-control" id="discord" placeholder="Enter your Discord username">
             </div>
 
             <div class="form-group">
                 <label for="dropdown">What class is your main?</label>
-                <input list="dropdown">
-                <datalist id="dropdown">
-                    <option value="Death Knight">
-                    <option value="Demon Hunter">
-                    <option value="Druid">
-                    <option value="Hunter">
-                    <option value="Mage">
-                    <option value="Monk">
-                    <option value="Paladin">
-                    <option value="Priest">
-                    <option value="Rogue">
-                    <option value="Shaman">
-                    <option value="Warlock">
-                    <option value="Warrior">
-                </datalist>
+                <select class="form-control" id="dropdown">
+                    <option selected disabled>Select a class</option>
+                    <option>Death Knight</option>
+                    <option>Demon Hunter</option>
+                    <option>Druid</option>
+                    <option>Hunter</option>
+                    <option>Mage</option>
+                    <option>Monk</option>
+                    <option>Paladin</option>
+                    <option>Priest</option>
+                    <option>Rogue</option>
+                    <option>Shaman</option>
+                    <option>Warlock</option>
+                    <option>Warrior</option>
+                </select>
             </div>
 
             <div class="form-group">
-                <label for="game" id="game-label">Game Version</label>
-                <input type="radio" name="game" id="classic"><label for="classic">Classic</label>
-                <input type="radio" name="game" id="retail"><label for="retail">Retail</label>
+                <label for="number" id="number-label">What level is your main?</label>
+                <input type="number" min="1" max="120" class="form-control" id="number" placeholder="Enter a number between 1 and 120">
             </div>
 
             <div class="form-group">
-                <label for="interests" id="interests-label">Interests</label>
-                <input type="checkbox" name="interests" id="pvp" value="pvp"><label for="pvp">PVP</label>
-                <input type="checkbox" name="interests" id="raiding" value="raiding"><label for="raiding">Raiding</label>
-                <input type="checkbox" name="interests" id="pet-battles" value="pet-battles"><label for="pet-battles">Pet Battles</label>
-                <input type="checkbox" name="interests" id="mythic-plus" value="mythic-plus"><label for="mythic-plus">Mythic Plus</label>
-                <input type="checkbox" name="interests" id="island-expeditions" value="island-expeditions"><label for="island-expeditions">Island Expeditions</label>
-                <input type="checkbox" name="interests" id="other" value="other"><label for="other">Other</label>
+                <p><label for="role" id="role-label"><strong>What is your primary role?</strong></label></p>
+                <div class="row">
+                    <div class="col-xs-3"><input type="radio" name="role" id="dps"><label for="dps">Damage</label></div>
+                    <div class="col-xs-3"><input type="radio" name="role" id="heals"><label for="heals">Healer</label></div>
+                    <div class="col-xs-3"><input type="radio" name="role" id="tank"><label for="tank">Tank</label></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <p><label for="interests" id="interests-label"><strong>Which activities are you interested in?</strong></label></p>
+                <div class="row">
+                    <div class="col-xs-3"><input type="checkbox" name="interests" id="pvp" value="pvp"><label for="pvp">PVP</label></div>
+                    <div class="col-xs-3"><input type="checkbox" name="interests" id="raiding" value="raiding"><label for="raiding">Raiding</label></div>
+                    <div class="col-xs-3"><input type="checkbox" name="interests" id="pet-battles" value="pet-battles"><label for="pet-battles">Pet Battles</label></div>
+                    <div class="col-xs-3"><input type="checkbox" name="interests" id="mythic-plus" value="mythic-plus"><label for="mythic-plus">Mythic Plus</label></div>
+                    <div class="col-xs-3"><input type="checkbox" name="interests" id="islands" value="islands"><label for="island-expeditions">Islands</label></div>
+                    <div class="col-xs-3"><input type="checkbox" name="interests" id="other" value="other"><label for="other">Other</label></div>
+                </div>
             </div>
 
             <div class="form-group">
                 <label for="comments" id="comments-label">Additional Comments</label>
-                <textarea id="comments"></textarea>
+                <textarea class="form-control" id="comments"></textarea>
             </div>
 
             <div class="form-group">
-                <button class="btn btn-default">Submit</button>
+                <button class="btn btn-primary form-control">Submit</button>
             </div>
         </form>
     </div>
