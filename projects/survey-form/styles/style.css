@@ -41,7 +41,13 @@ textarea {
     min-height: 10em;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 980px) { /* Desktop */
+}
+
+@media screen  and (max-width: 979px) { /* Tablet */
+}
+
+@media screen and (max-width: 500px) { /* Mobile */
     #description, #survey-form {
         width: 75vw;
     }
