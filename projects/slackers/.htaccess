@@ -1,0 +1,13 @@
+RewriteEngine On
+
+#If directory doesn't exist (!-d) or file doesn't exist (!-f)...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php?/$1 [L]
+
+#Redirect to home page if trying to access private folders.
+RewriteCond %{REQUEST_URI} (controllers|views|errors|logs)
+RewriteRule ^(.*)$ http://jlvellocido.me/projects/slackers [L]
+
+#Disable directory listings.
+Options -Indexes
