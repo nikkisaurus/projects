@@ -6,7 +6,7 @@ class Database {
 
 	public function __construct($host, $user, $pass, $database) {
 		// Database type (mysql), database name and server/host
-		$dsn = 'mysql:dbname=' . $database . ';port=3308;host=' . $host;
+		$dsn = 'mysql:dbname=' . $database . ';port=3308;charset=utf8;host=' . $host;
 
 		try {
 			$this->connection = new PDO($dsn, $user, $pass);

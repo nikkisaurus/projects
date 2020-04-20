@@ -25,7 +25,9 @@ if ($_SERVER['HTTP_HOST'] == 'portfolio') {
 	$database = $domain_database;
 }
 
+header('Content-Type: text/html; charset=utf-8');
 $db = new Database($host, $username, $password, $database);
+// $db->query("SET NAMES 'utf8'");
 
 date_default_timezone_set($time_zone);
 
@@ -52,6 +54,8 @@ if (get_magic_quotes_gpc()) {
     }
     unset($process);
 }
+
+header('Content-type: text/html; charset=utf-8');
 
 $r = new Router();
 $r->render();

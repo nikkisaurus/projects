@@ -49,5 +49,5 @@
 		</table>
 	</form>
 
-	<?php session_message('update_error'); session_message('update_success'); ?>	
+	<?php session_message('update_error'); session_message('update_success'); ?>
 </div>
