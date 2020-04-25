@@ -1,0 +1,241 @@
+/* Variables and Imports */
+
+$primary-color: rgb(1, 127, 85);
+$primary-font: rgb(255, 255, 255);
+$accent-color: rgb(232, 125, 17);
+
+@import url("https://fonts.googleapis.com/css?family=Muli");
+
+/* Global */
+
+html {
+    font-size: 62.5%;
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+body {
+    font-size: 1.75rem;
+    font-family: Muli, sans-serif;
+}
+
+button {
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.5rem 3rem;
+
+    background-color: #ccc;
+    border: 0.5px solid #bbb;
+}
+
+h1 {
+    color: $primary-color;
+    font-size: 2.5rem;
+}
+
+section {
+    margin-top: 10rem;
+}
+
+/* Classes */
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -10rem;
+    visibility: hidden;
+}
+
+.container {
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.primary-btn {
+    background-color: $accent-color;
+    color: $primary-font;
+    border: 0.5px solid darken($accent-color, 10%);
+}
+
+.text-centered {
+    text-align: center;
+}
+
+/* Header */
+
+#header {
+    background-color: $primary-color;
+
+    position: sticky;
+    width: 100%;
+    top: 0;
+
+    padding: 0.75rem;
+
+    z-index: 100;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+// Div inside the header used to apply the container class.
+// Sets justify-content so the logo is to the left and the nav-bar is to the right.
+#header-container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Logo
+#header-image {
+    height: 4rem;
+}
+
+#hamburger-menu {
+    height: 3rem;
+}
+
+/* Menu Styling Classes */
+
+.largeMenu {
+    a {
+        color: $primary-font;
+    }
+
+    li {
+        display: inline-flex;
+    }
+
+    li:not(:first-child):not(:last-child) {
+        margin: 0 1rem;
+    }
+}
+
+.smallMenu {
+    display: none;
+
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 100%);
+    top: 100%;
+    left: 0;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    a {
+        font-size: 2rem;
+        color: #000;
+    }
+
+    li {
+        display: block;
+        margin: 0;
+    }
+}
+
+/* Main */
+
+#main {
+    display: flex;
+    margin: 2rem auto;
+}
+
+/* Features */
+
+#features-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 950px) {
+        flex-direction: column;
+    }
+}
+
+#features-image {
+    min-height: 15em;
+    min-width: 15em;
+
+    max-height: 15em;
+    max-width: 15em;
+
+    margin: -3em auto 2em auto;
+
+    filter: grayscale(100%);
+    transform: rotate(-45deg);
+}
+
+
+#features-list {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 2em;
+}
+
+.feature-icon {
+    align-self: center;
+
+    img {
+        display: block;
+
+        height: 4rem;
+        margin: auto;
+    }
+}
+
+/* Pricing */
+
+#pricing-block {
+    @media screen and (min-width: 530px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-rows: auto;
+        justify-content: center;
+    }
+}
+
+.card {
+    border: 0.1rem solid darken($primary-color, 5%);
+
+    text-align: center;
+
+    &-active {
+        border: 0.1rem solid darken($accent-color, 5%);
+
+        .card-header {
+            background-color: $accent-color;
+        }
+    }
+}
+
+.card-header {
+    background-color: $primary-color;
+    color: $primary-font;
+
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.card-content {
+    padding: 4rem;
+
+    h4 {
+        padding: 2rem 0 1rem 0;
+        color: $primary-color;
+    }
+
+    p {
+        padding-bottom: 1rem;
+    }
+}
+
