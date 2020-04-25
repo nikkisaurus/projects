@@ -42,12 +42,12 @@ section {
 
 /* Classes */
 
-a.anchor {
-    display: block;
-    position: relative;
-    top: -10rem;
-    visibility: hidden;
-}
+// a.anchor {
+//     display: block;
+//     position: relative;
+//     top: -10rem;
+//     visibility: hidden;
+// }
 
 .container {
     width: 75vw;
@@ -73,6 +73,7 @@ a.anchor {
 
 #header {
     background-color: $primary-color;
+    color: $primary-font;
 
     position: sticky;
     width: 100%;

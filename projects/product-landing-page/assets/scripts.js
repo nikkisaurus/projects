@@ -3,6 +3,9 @@
 const hamburger = document.getElementById("hamburger-menu");
 const main = document.getElementById("main");
 const menu = document.getElementById("menu");
+const nav_links = document.getElementsByClassName("nav-link");
+
+let isMenuSmall = false;
 
 /* Window Resize */
 
@@ -16,6 +19,8 @@ function SetMenuClass() {
         hamburger.style.display = "none";
         main.style.display = "block";
         menu.style.display = "block";
+
+        isMenuSmall = false;
     } else {
         // Changes #menus class to .smallMenu
         menu.classList.remove("largeMenu");
@@ -25,6 +30,8 @@ function SetMenuClass() {
         hamburger.style.display = "block";
         main.style.display = "block";
         menu.style.display = "none";
+
+        isMenuSmall = true;
     }
 }
 
@@ -43,3 +50,25 @@ document.getElementById("hamburger-menu").onclick = function (event) {
         main.style.display = "block";
     }
 };
+
+/* Controls onclick for #menu on small screens */
+
+for (let i = 0; i < nav_links.length; i++) {
+    let link = nav_links[i];
+    let text = link.textContent;
+
+    link.onclick = (event) => {
+        event.preventDefault();
+
+        if (text === "home") {
+            window.location.href = "";
+        } else {
+            window.location.href = "#" + text;
+        }
+
+        if (isMenuSmall) {
+            menu.style.display = "none";
+            main.style.display = "block";
+        }
+    };
+}

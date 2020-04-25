@@ -33,13 +33,6 @@ section {
 }
 
 /* Classes */
-a.anchor {
-  display: block;
-  position: relative;
-  top: -10rem;
-  visibility: hidden;
-}
-
 .container {
   width: 75vw;
   margin: 0 auto;
@@ -68,6 +61,7 @@ a.anchor {
 /* Header */
 #header {
   background-color: #017f55;
+  color: white;
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
