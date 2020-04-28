@@ -55,7 +55,6 @@ document.getElementById("hamburger-menu").onclick = function (event) {
 
 for (let i = 0; i < nav_links.length; i++) {
     let link = nav_links[i];
-    let text = link.textContent;
 
     link.onclick = (event) => {
         if (isMenuSmall) {

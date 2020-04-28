@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+/* Global */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Muli, sans-serif;
+  background-color: #ccc;
+}
+
+/* Elements */
+footer {
+  background-color: #6a5b6e;
+  color: #fff;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #b6d4b6;
+}
+
+footer ul {
+  margin: 0;
+}
+
+footer li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 1rem;
+}
+
+h2 {
+  margin: 0 2rem 2rem 2rem;
+}
+
+.h-primary {
+  color: #335834;
+}
+
+.h-secondary {
+  color: #fff;
+}
+
+header {
+  background-color: #6a5b6e;
+  color: #fff;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #b6d4b6;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: space-between;
+  padding: 2rem;
+}
+
+nav > :first-child {
+  white-space: nowrap;
+}
+
+nav > :last-child {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: right;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-left: 2rem;
+}
+
+p {
+  padding: 0 2rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+/* Classes */
+.container {
+  width: 65vw;
+  margin: 0 auto;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+/* Cards */
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border: 0.1rem solid #4f4452;
+  margin: 1rem;
+}
+
+.card-image img {
+  width: 100%;
+}
+
+.card-title {
+  background-color: #6a5b6e;
+  color: #fff;
+  width: 100%;
+}
+
+.card-desc {
+  padding: 1rem;
+}
+
+.card-links {
+  margin-top: auto;
+  padding-bottom: 1rem;
+}
+
+.card-links > button:not(.card-link-primary) {
+  border: 0.1rem solid #888888;
+  background-color: white;
+}
+
+.card-links > button {
+  padding: 0.5rem 2rem;
+}
+
+.card-links > button:hover {
+  cursor: pointer;
+}
+
+.card-link-primary {
+  border: 0.1rem solid #335834;
+  background-color: #b6d4b6;
+}
+
+/* Menu */
+#hamburger {
+  display: none;
+  height: 2rem;
+  margin-left: auto;
+}
+
+.menu-sm {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 100%);
+  top: 100%;
+  left: 0;
+  text-align: center;
+  margin: auto;
+  background-color: #fff;
+}
+
+.menu-sm a {
+  color: #6a5b6e;
+}
+
+.menu-sm li {
+  display: block;
+  padding: 2rem 0;
+}
+
+/* Projects */
+#projects-container {
+  background-color: #fff;
+}
+
+#project-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#project-container > .card {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  min-width: 250px;
+}
+
+/* Skills */
+#skills-container {
+  background-color: #6a5b6e;
+  color: #fff;
+  text-align: center;
+}
+
+#skills-container li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 3rem;
+}
+
+/* About */
+#about-container {
+  background-color: #fff;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -5rem;
+  visibility: hidden;
+}
+/*# sourceMappingURL=style.css.map */
