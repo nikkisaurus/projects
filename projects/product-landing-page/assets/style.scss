@@ -199,7 +199,7 @@ section {
 #pricing-block {
     @media screen and (min-width: 530px) {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
         grid-template-rows: auto;
         justify-content: center;
     }
