@@ -65,7 +65,7 @@ const projects = [
     {
         id: "slackers",
         title: "Slackers",
-        desc: "A website used to track video game bonus rolls written in HTML5, CSS, PHP and MySQL."
+        desc: "A website used to track video game bonus rolls written in HTML5, CSS, JavaScript, PHP and MySQL."
     },
     {
         id: "survey-form",

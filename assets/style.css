@@ -26,10 +26,6 @@ footer a:hover {
   color: #b6d4b6;
 }
 
-footer ul {
-  margin: 0;
-}
-
 footer li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -88,11 +84,6 @@ nav > :last-child {
   text-align: right;
 }
 
-nav ul {
-  padding: 0;
-  margin: 0;
-}
-
 nav li {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -108,10 +99,21 @@ section {
   padding: 2rem 0;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
 /* Classes */
 .container {
   width: 65vw;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    width: 95vw;
+  }
 }
 
 .text-centered {
