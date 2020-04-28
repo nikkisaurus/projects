@@ -58,14 +58,6 @@ for (let i = 0; i < nav_links.length; i++) {
     let text = link.textContent;
 
     link.onclick = (event) => {
-        event.preventDefault();
-
-        if (text === "home") {
-            window.location.href = "";
-        } else {
-            window.location.href = "#" + text;
-        }
-
         if (isMenuSmall) {
             menu.style.display = "none";
             main.style.display = "block";

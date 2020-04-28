@@ -22,6 +22,8 @@ body {
     font-family: Muli, sans-serif;
 }
 
+/* Elements */
+
 button {
     border: 0;
     border-radius: 1rem;
@@ -37,17 +39,10 @@ h1 {
 }
 
 section {
-    margin-top: 10rem;
+    padding: 5rem 0;
 }
 
 /* Classes */
-
-// a.anchor {
-//     display: block;
-//     position: relative;
-//     top: -10rem;
-//     visibility: hidden;
-// }
 
 .container {
     width: 75vw;
@@ -65,8 +60,11 @@ section {
     border: 0.5px solid darken($accent-color, 10%);
 }
 
-.text-centered {
-    text-align: center;
+a.anchor {
+    display: block;
+    position: relative;
+    top: -10rem;
+    visibility: hidden;
 }
 
 /* Header */
@@ -148,7 +146,7 @@ section {
 
 #main {
     display: flex;
-    margin: 2rem auto;
+    margin: 4rem auto;
 }
 
 /* Features */
@@ -158,24 +156,21 @@ section {
     flex-direction: row;
     justify-content: space-evenly;
 
+    // Force column direction for better readability.
     @media screen and (max-width: 950px) {
         flex-direction: column;
     }
 }
 
 #features-image {
-    min-height: 15em;
-    min-width: 15em;
+    flex-basis: 30%;
 
-    max-height: 15em;
-    max-width: 15em;
-
-    margin: -3em auto 2em auto;
+    padding: 0 0 2em 0;
+    margin: auto;
 
     filter: grayscale(100%);
     transform: rotate(-45deg);
 }
-
 
 #features-list {
     display: grid;
@@ -239,4 +234,3 @@ section {
         padding-bottom: 1rem;
     }
 }
-

@@ -15,6 +15,7 @@ body {
   font-family: Muli, sans-serif;
 }
 
+/* Elements */
 button {
   border: 0;
   border-radius: 1rem;
@@ -29,7 +30,7 @@ h1 {
 }
 
 section {
-  margin-top: 10rem;
+  padding: 5rem 0;
 }
 
 /* Classes */
@@ -54,8 +55,11 @@ section {
   border: 0.5px solid #b8630e;
 }
 
-.text-centered {
-  text-align: center;
+a.anchor {
+  display: block;
+  position: relative;
+  top: -10rem;
+  visibility: hidden;
 }
 
 /* Header */
@@ -140,7 +144,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 2rem auto;
+  margin: 4rem auto;
 }
 
 /* Features */
@@ -167,11 +171,10 @@ section {
 }
 
 #features-image {
-  min-height: 15em;
-  min-width: 15em;
-  max-height: 15em;
-  max-width: 15em;
-  margin: -3em auto 2em auto;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  padding: 0 0 2em 0;
+  margin: auto;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   -webkit-transform: rotate(-45deg);
